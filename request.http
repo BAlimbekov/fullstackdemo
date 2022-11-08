@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000
+
+###
+GET http://127.0.0.1:3000/cars
+
+###
+GET http://localhost:3000/api/cars/3
+
+###
+POST http://localhost:3000/api/cars
+Content-Type: application/json
+
+{
+    "make":"ford", "model":"Escord", "odometer": 3000, "availible": true
+}
+
+###
+DELETE http://localhost:3000/api/cars/7
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/api/cars/4
+Content-Type: application/json
+
+{
+    "model":"M3",
+    "make":"BMW",
+    "odometer": 174000,
+    "availible": true
+}
